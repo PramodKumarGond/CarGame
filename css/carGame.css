@@ -1,0 +1,110 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hide{
+    visibility: hidden;
+}
+.score1{
+    position:absolute;
+    top: 50px;
+    left: 40;
+    background-color: rgb(53, 148, 53);
+    width: 300px;
+    /*height: 70px;*/
+    line-height: 70px;
+    text-align: center;
+    box-shadow: 0 5px 5px #777;
+    font-size: 1.5em;
+    font-family: fantasy;
+}
+.playerCar{
+    width: 50px;
+    height: 70px;
+    background:rgb(46, 45, 45) ;
+    position: absolute;
+    background-image:url('images/car1.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+   /* border: 1px solid red;*/
+    border-radius: 20px;
+}
+.enemy{
+    width: 50px;
+    height: 70px;
+    background:rgb(46, 45, 45) ;
+    background-size: 100% 100%;
+    background-image: url('images/car2.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 150px;
+    left: 100px;
+   /* border: 1px solid red;*/
+    border-radius: 20px;
+    
+}
+.fastCar{
+    width: 50px;
+    height: 70px;
+    background:rgb(46, 45, 45) ;
+    background-image: url('images/car4.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: 100% 100%;
+    margin: 0px;
+    padding: 0px;
+   /* bottom: 150px;
+    left: 100px;
+    border: 1px solid red;*/
+    border-radius: 20px;
+    
+}
+.gameArea{
+    overflow: hidden;
+    width: 400px;
+    height: 100%;
+    background:rgb(46, 45, 45) ;
+    margin: auto;
+    position: relative;
+    border: 5px dashed rgb(247, 236, 236);
+}
+.line{
+    overflow: hidden;
+   width: 10px;
+  /* height: 100px;*/
+   background: rgb(252, 246, 246);
+   position:absolute;
+   margin-left: 195px;
+}
+.startScreen{
+     position: absolute;
+     background-color: rgb(185, 35, 245);
+     left: 50%;
+     top: 50%;
+     margin: auto;
+     width: 50%;
+     transform: translate(-50%,-50%);
+     text-transform: uppercase;
+     line-height: 30px;
+     border: 1px solid #777;
+     box-shadow: 0 5px 5px #777;
+     padding: 15px;
+     cursor: pointer;
+     word-spacing: 3;
+     letter-spacing: 5;
+     text-align: center;
+}
+.carGame{
+    border: 2px solid rgb(230, 16, 16);
+    width: 100%;
+    height: 100vh;
+    overflow:hidden;
+    background-color: azure;
+    background-repeat: no-repeat;
+    background-size: 100% 100%; /* it will help to show bacground without croping image*/
+}
